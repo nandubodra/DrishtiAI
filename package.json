@@ -1,0 +1,22 @@
+{
+  "name": "drishti-ai",
+  "version": "1.0.0",
+  "description": "Smart Vision Assistant for Blind Users",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\" \"cd ai-service && python app.py\"",
+    "build": "npm run build --prefix frontend && npm run build --prefix backend",
+    "start": "npm start --prefix backend"
+  },
+  "keywords": [
+    "ai",
+    "vision",
+    "blind-assistance",
+    "accessibility"
+  ],
+  "author": "Nandu Bodra",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
